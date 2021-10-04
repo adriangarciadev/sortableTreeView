@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +20,19 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
+
+
+
+ 
+function App() {
+  return (
+    <div className="App">
+      <DndProvider backend={HTML5Backend}>
+        <Example tree={tree} name={"testTree"}/>
+      </DndProvider>
+    </div>
+  )
+} 
 
 export default App;
